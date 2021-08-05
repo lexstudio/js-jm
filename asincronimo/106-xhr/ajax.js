@@ -13,7 +13,7 @@
         if(xhr.status>=200 && xhr.status<=300){
             console.log(`Exito`)
             // console.log(xhr.responseText)
-            // $xhr.innerHTML=xhr.responseTex
+            // $xhr.innerHTML=xhr.responseText
 
             //convertir la respuesta a json
             let json= JSON.parse(xhr.responseText)
