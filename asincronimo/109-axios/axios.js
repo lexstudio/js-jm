@@ -2,7 +2,7 @@ const $axios = document.getElementById("axios")
 $fragment = document.createDocumentFragment()
 
 axios
-    .get("https://pokeapi.co/api/v2/pokemo")
+    .get("https://pokeapi.co/api/v2/pokemon")
     .then((res)=>{
         console.log(res)
         let json = res.data.results
