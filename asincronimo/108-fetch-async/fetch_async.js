@@ -10,7 +10,6 @@ async function getData(){
         if(!res.ok)throw{
             status:res.status, statusText:res.statusText
         }
-        
 
         json.forEach((el)=>{
             const $li= document.createElement('li')
@@ -18,7 +17,7 @@ async function getData(){
             $fragment.appendChild($li)
         })
 
-        $fetchAsync.appendChild($li)
+        $fetchAsync.appendChild($fragment)
 
     }catch(err){
         console.log(err)
@@ -26,6 +25,5 @@ async function getData(){
         console.log("Esto se ejecutara en todo momento")
     }
 }
-
 
 getData()
