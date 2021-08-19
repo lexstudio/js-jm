@@ -27,11 +27,11 @@ $cards.appendChild($figure)
 //otra manera de agregar los elementos dentro del figure utilizando innerHTML en lugar de appenChild pero con esto no estmos  creando nodos
 $figure2=document.createElement("figure")
 $figure2.innerHTML=`
-    <img src='https://placeimg.com/200/200/people' alt='People'>
+    <img src="https://placeimg.com/200/200/people" alt="People">
     <figcaption>People</figcaption>
 `
 
-$figure2.classList.add('card')
+$figure2.classList.add("card")
 $cards.appendChild($figure2)
 
 
@@ -39,14 +39,14 @@ $cards.appendChild($figure2)
 
 //**************************************************************************** */
 //ejercicio
-const estaciones=['Primavera','Verano','Otoño','Invierno']
-$ul= document.createElement('ul')
+const estaciones=["Primavera","Verano","Otoño","Invierno"]
+$ul= document.createElement("ul")
 
-document.write('<h3>Estaciones del año</h3>')
+document.write("<h3>Estaciones del año</h3>")
 document.body.appendChild($ul)
 
 estaciones.forEach(el=>{
-    const $li =document.createElement('li')
+    const $li =document.createElement("li")
     $li.textContent=el
     $ul.appendChild($li)
 })
@@ -82,7 +82,7 @@ const meses=[
     "Diciembre"
 ]
 
-const $ul3= document.createElement('ul')
+const $ul3= document.createElement("ul")
 //nos permite realizar una sola incersion del fragmento de varios elementos
 const $fragment=document.createDocumentFragment()
 

@@ -22,5 +22,5 @@ axios
         $axios.innerHTML = `Error ${err.response.status}: ${message}`
     })
     .finally(
-        ()=>console.log('finally')
+        ()=>console.log("finally")
     )

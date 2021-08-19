@@ -2,7 +2,7 @@
 (()=>{
     //1 Instancia xhr
     const xhr = new XMLHttpRequest()
-    const $xhr = document.querySelector('#xhr')
+    const $xhr = document.querySelector("#xhr")
     const $fragment = document.createDocumentFragment()
 
     //console.log(xhr)

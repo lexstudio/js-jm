@@ -12,7 +12,7 @@
         console.log(json)
         // $fetch.innerHTML=json
         json.forEach((el)=>{
-            const $li = document.createElement('li')
+            const $li = document.createElement("li")
             $li.innerHTML = `${el.name}--${el.email}--${el.phone}`
             $fragment.appendChild($li)
         })
